@@ -7,7 +7,7 @@ export default function Hobbies() {
         </h1>
         <div className="w-full h-px bg-gray-100 rounded-full"></div>
         <p className="text-sm text-gray-800 font-medium">
-            Traveling
+            Hiking
             <br />
             Jogging
         </p>
