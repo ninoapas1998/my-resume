@@ -1,4 +1,4 @@
-import vn from "../assets/vn.jpg";
+import vn from '../../assets/vn.jpg';
 import { FaLinkedin, FaBehance, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 export default function ProfileCard() {
