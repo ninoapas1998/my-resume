@@ -1,4 +1,4 @@
-import { Calendar } from "lucide-react";
+import { FaCalendar } from "react-icons/fa";
 
 export default function Education() {
   return (
@@ -21,7 +21,7 @@ export default function Education() {
                         </p>
                     </div>
                     <div className="flex items-center gap-2">
-                        <Calendar className="h-6 w-6 text-gray-500" />
+                        <FaCalendar className="h-5 w-5 text-[#008DDE]" />
                         <span className="text-sm text-gray-500 font-medium">
                             June 2015 - June 2019
                         </span>

@@ -5,7 +5,7 @@ import LandingPage from './pages/LandingPage';
 import ResumeDetail from './pages/ResumeDetail';
 import Login from './pages/Login';
 import CmsAdminPage from './pages/CmsAdminPage';
-import './pages/container/main.css';
+import './main.css';
 import vnImage from './assets/vn.jpg';
 
 document.title = 'VNA';
