@@ -2,10 +2,10 @@ export default function Skills() {
   return (
     <div
       className="w-full items-center justify-center"
-      style={{ background: 'linear-gradient(135deg, #030712 0%, #111827 100%)' }}
+      style={{ background: 'linear-gradient(0deg, #030712 0%, #111827 100%)' }}
     >
       <div className="mx-auto max-w-screen-xl">
-        <div className="flex flex-col gap-16 items-center justify-center min-h-screen">
+        <div className="flex flex-col gap-16 items-center justify-center py-32">
           <h1 className="text-6xl font-bold text-[#008DDE] code">
             My Skills
           </h1>

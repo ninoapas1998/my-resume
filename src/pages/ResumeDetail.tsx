@@ -8,6 +8,7 @@ import Hobbies from './container/Hobbies';
 import WorkExperience from './container/WorkExperience';
 import Education from './container/Education';
 import ProjectExperience from './container/ProjectExperience';
+import Awards from './container/Awards';
 
 export default function ResumeDetail() {
   useEffect(() => {
@@ -32,6 +33,7 @@ export default function ResumeDetail() {
           <Education />
           <WorkExperience />
           <ProjectExperience />
+          <Awards />
         </div>
       </div>
     </div>

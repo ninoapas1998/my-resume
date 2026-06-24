@@ -15,10 +15,10 @@ export default function Hero() {
   return (
     <div
       className="w-full items-center justify-center"
-      style={{ background: 'linear-gradient(45deg, #111827 0%, #030712 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #030712 0%, #111827 100%)' }}
     >
       <div className="mx-auto max-w-screen-xl">
-        <div className="flex flex-col gap-10 items-center justify-center min-h-screen">
+        <div className="flex flex-col gap-10 items-center justify-center py-32">
           <div
             style={{ width: '256px', height: '256px', backgroundColor: '#D9D9D9' }}
           />
@@ -36,14 +36,14 @@ export default function Hero() {
             </p>
           </div>
             <div className="flex gap-6">
-                <Link to="/resume">
-                  <Button variant="solidToOutline">
-                    View Online Resume
-                  </Button>
-                </Link>
-                <Button variant="outline" onClick={handleDownloadResume}>
-                  Download Resume
+              <Link to="/resume">
+                <Button variant="solidToOutline">
+                  View Online Resume
                 </Button>
+              </Link>
+              <Button variant="outline" onClick={handleDownloadResume}>
+                Download Resume
+              </Button>
             </div>
         </div>
       </div>

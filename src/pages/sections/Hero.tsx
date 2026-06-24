@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <div
       className="w-full items-center justify-center"
-      style={{ background: 'linear-gradient(135deg, #030712 0%, #111827 100%)' }}
+      style={{ background: 'linear-gradient(0deg, #030712 0%, #111827 100%)' }}
     >
         <div className="mx-auto max-w-screen-xl">
             <div className="flex flex-col gap-33 items-center justify-center min-h-screen">
