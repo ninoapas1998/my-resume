@@ -1,3 +1,7 @@
+import ui from "../../assets/icons/pen-nib.svg";
+import autom from "../../assets/icons/code-fork.svg";
+import web from "../../assets/icons/code.svg";
+
 export default function Skills() {
   return (
     <div
@@ -11,41 +15,50 @@ export default function Skills() {
           </h1>
           <div className="flex flex-col gap-12 items-left justify-center w-full">
             <div className="flex gap-8">
-              <div
-                style={{ width: '144px', height: '144px', backgroundColor: '#D9D9D9' }}
+              <img
+                src={ui}
+                width={144}
+                height={144}
+                alt="Picture of the author"
               />
               <div className="flex flex-col gap-4">
                 <h1 className="text-4xl font-bold text-white code">
-                    UI/UX Designer
+                  UI/UX Designer
                 </h1>
                 <p className="text-2xl text-white font-extralight">
-                    5 years of experience
+                  5+ years of experience designing user-centered web and mobile applications from research to developer handoff. Experienced in UX research, user flows, wireframing, prototyping, design systems, usability testing, responsive design, and accessibility. Proficient in Figma, Adobe XD, and collaborating with cross-functional Agile teams to deliver scalable digital products.
                 </p>
               </div>
             </div>
             <div className="flex gap-8">
-              <div
-                style={{ width: '144px', height: '144px', backgroundColor: '#D9D9D9' }}
+              <img
+                src={web}
+                width={144}
+                height={144}
+                alt="Picture of the author"
               />
               <div className="flex flex-col gap-4">
                 <h1 className="text-4xl font-bold text-white code">
-                    Programmer/Developer
+                  Programmer/Developer
                 </h1>
                 <p className="text-2xl text-white font-extralight">
-                    Aspiring Web Developer
+                  Experienced in front-end web development using HTML, CSS, PHP, and basic Python. Developed and maintained responsive websites, implemented client requirements, optimized website performance, collaborated with QA and developers, and ensured responsive, production-ready solutions across multiple projects.
                 </p>
               </div>
             </div>
             <div className="flex gap-8">
-              <div
-                style={{ width: '144px', height: '144px', backgroundColor: '#D9D9D9' }}
+              <img
+                src={autom}
+                width={144}
+                height={144}
+                alt="Picture of the author"
               />
               <div className="flex flex-col gap-4">
                 <h1 className="text-4xl font-bold text-white code">
-                    Automation
+                  AI & Automation
                 </h1>
                 <p className="text-2xl text-white font-extralight">
-                    Aspiring Automation
+                  Knowledgeable in workflow automation and process optimization with experience using Python and AI-powered tools to improve productivity. Familiar with automating repetitive tasks, integrating business workflows, and leveraging modern automation platforms to streamline design, documentation, and operational processes.
                 </p>
               </div>
             </div>

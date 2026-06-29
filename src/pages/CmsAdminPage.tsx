@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 
 export default function CmsAdminPage() {
   return (
@@ -6,9 +6,7 @@ export default function CmsAdminPage() {
       <nav className="bg-gray-800 shadow-lg">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold">CMS Admin Dashboard</h1>
-          <Link to="/" className="text-blue-400 hover:text-blue-300">
-            ← Back to Home
-          </Link>
+          
         </div>
       </nav>
 

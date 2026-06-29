@@ -1,5 +1,6 @@
 import Button from '../../components/Button';
 import vna_cv from "../../assets/pdf/vna_cv.pdf";
+import vn from '../../assets/vn.jpg';
 import { Link } from 'react-router-dom';
 
 export default function Hero() {
@@ -19,8 +20,12 @@ export default function Hero() {
     >
       <div className="mx-auto max-w-screen-xl">
         <div className="flex flex-col gap-10 items-center justify-center py-32">
-          <div
-            style={{ width: '256px', height: '256px', backgroundColor: '#D9D9D9' }}
+          <img
+            src={vn}
+            width={256}
+            height={256}
+            className="rounded-full object-cover"
+            alt="Picture of the author"
           />
           <div className="flex flex-col gap-6 items-center text-center">
             <h1 className="text-6xl font-bold text-[#008DDE] code">

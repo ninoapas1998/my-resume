@@ -1,3 +1,5 @@
+import logo from '../../assets/nino-logo.svg';
+
 export default function Hero() {
   return (
     <div
@@ -6,8 +8,11 @@ export default function Hero() {
     >
         <div className="mx-auto max-w-screen-xl">
             <div className="flex flex-col gap-33 items-center justify-center min-h-screen">
-                <div
-                style={{ width: '256px', height: '256px', backgroundColor: '#D9D9D9' }}
+                <img
+                    src={logo}
+                    height={256}
+                    className="object-cover"
+                    alt="Picture of the author"
                 />
                 <div className="flex flex-col gap-6 items-center">
                     <h1 className="text-9xl font-bold text-[#008DDE] code">

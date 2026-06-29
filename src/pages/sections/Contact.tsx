@@ -13,14 +13,11 @@ export default function Contact() {
                     <h1 className="text-6xl font-bold text-[#008DDE] code">
                         Get In Touch
                     </h1>
-                    <p className="text-5xl font-semibold text-white">
-                        About me
-                    </p>
-                    <p className="text-2xl font-extralight text-white">
-                        About me
+                    <p className="text-2xl font-extralight text-white text-center">
+                        I'm always open to discussing new opportunities, freelance projects, or collaborations. Whether you need a UI/UX designer, web designer, or someone to help bring your digital product to life, I'd love to hear from you. Let's build something great together.
                     </p>
                 </div>
-                <Link to="#">
+                <Link to="https://mail.google.com/mail/?view=cm&fs=1&to=vincentninoapas@gmail.com" target="_blank" rel="noopener noreferrer">
                     <Button variant="solidToOutline">
                         Contact Me
                     </Button>

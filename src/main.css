@@ -77,3 +77,67 @@ body {
 .info-row a:hover {
   text-decoration: underline;
 }
+
+.review-slide-enter-right {
+  animation: review-slide-enter-right 300ms ease-out;
+}
+
+.review-slide-exit-left {
+  animation: review-slide-exit-left 300ms ease-out forwards;
+}
+
+.review-slide-enter-left {
+  animation: review-slide-enter-left 300ms ease-out;
+}
+
+.review-slide-exit-right {
+  animation: review-slide-exit-right 300ms ease-out forwards;
+}
+
+@keyframes review-slide-enter-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes review-slide-exit-left {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes review-slide-enter-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes review-slide-exit-right {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}

@@ -1,4 +1,19 @@
 export default function TechStack() {
+  const techstack = [
+  "Figma",
+  "Adobe XD",
+  "Photoshop",
+  "Illustrator",
+  "Canva",
+  "CapCut",
+  "HTML",
+  "CSS3",
+  "PHP",
+  "Python",
+  "ReactJS",
+  "TailwindCSS",
+  "Git",
+];
   return (
     <div className="w-full flex">
       <div className="w-[413px] rounded-2xl bg-white p-8 md:p-8 shadow-md flex flex-col gap-4">
@@ -7,7 +22,11 @@ export default function TechStack() {
         </h1>
         <div className="w-full h-px bg-gray-100 rounded-full"></div>
         <p className="text-sm text-gray-800 font-medium">
-            Figma
+          {techstack.map((techstack) => (
+            <span key={techstack} className="block">
+              {techstack}
+            </span>
+          ))}
         </p>
       </div>
     </div>
