@@ -73,7 +73,7 @@ export default function Reviews() {
   ) => {
     return (
       <div
-        className={`flex gap-8 bg-black/30 p-16 rounded-[64px] ${className}`}
+        className={`flex flex-col items-center gap-6 bg-black/30 p-6 text-center rounded-3xl sm:flex-row sm:gap-8 sm:p-10 sm:text-left lg:p-16 lg:rounded-[64px] ${className}`}
         onAnimationEnd={onAnimationEnd}
       >
         <img
@@ -81,13 +81,13 @@ export default function Reviews() {
           width={144}
           height={144}
           alt={`${review.name} profile`}
-          className="h-36 w-36 shrink-0 object-cover rounded-full"
+          className="h-24 w-24 shrink-0 rounded-full object-cover sm:h-32 sm:w-32 lg:h-36 lg:w-36"
         />
-        <div className="flex flex-col gap-4 justify-center w-[720px]">
-          <h1 className="text-4xl font-bold text-white code">
+        <div className="flex min-w-0 flex-col gap-4 justify-center sm:flex-1">
+          <h1 className="text-2xl font-bold text-white code sm:text-3xl lg:text-4xl">
             {review.name}
           </h1>
-          <p className="text-2xl text-white font-extralight">
+          <p className="text-base text-white font-extralight sm:text-xl lg:text-2xl">
             {review.testimonial}
           </p>
         </div>
@@ -100,26 +100,27 @@ export default function Reviews() {
       className="w-full items-center justify-center"
       style={{ background: 'linear-gradient(180deg, #030712 0%, #111827 100%)' }}
     >
-      <div className="mx-auto max-w-screen-xl">
-        <div className="flex flex-col gap-16 items-center justify-center py-32">
-          <h1 className="text-6xl font-bold text-[#008DDE] code">
+      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-12 items-center justify-center py-20 sm:py-24 lg:gap-16 lg:py-32">
+          <h1 className="text-center text-4xl font-bold text-[#008DDE] code sm:text-5xl lg:text-6xl">
             Reviews
           </h1>
-          <div className="flex w-full items-center justify-between gap-16">
+          <div className="flex w-full items-center justify-between gap-3 sm:gap-6 lg:gap-16">
             <button
               type="button"
               aria-label="Previous review"
-              className="cursor-pointer"
+              className="shrink-0 cursor-pointer"
               onClick={() => changeReview("previous")}
             >
               <img
                 src={left}
                 width={64}
                 height={64}
+                className="h-10 w-10 sm:h-12 sm:w-12 lg:h-16 lg:w-16"
                 alt=""
               />
             </button>
-            <div className="relative h-[272px] w-[1024px] overflow-hidden rounded-[64px]">
+            <div className="relative h-[360px] min-w-0 flex-1 overflow-hidden rounded-3xl sm:h-[256px] lg:h-[272px] lg:rounded-[64px]">
               {reviewTransition ? (
                 <>
                   {renderReviewCard(
@@ -147,13 +148,14 @@ export default function Reviews() {
             <button
               type="button"
               aria-label="Next review"
-              className="cursor-pointer"
+              className="shrink-0 cursor-pointer"
               onClick={() => changeReview("next")}
             >
               <img
                 src={right}
                 width={64}
                 height={64}
+                className="h-10 w-10 sm:h-12 sm:w-12 lg:h-16 lg:w-16"
                 alt=""
               />
             </button>

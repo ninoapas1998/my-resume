@@ -17,7 +17,7 @@ export default function Button({ children, onClick, className = '', variant = 'p
     <button
       type="button"
       onClick={onClick}
-      className={`${variantClasses} px-6 py-6 text-2xl font-semibold transition-all duration-300 cursor-pointer ${className}`}
+      className={`${variantClasses} w-full px-5 py-4 text-lg font-semibold transition-all duration-300 cursor-pointer sm:w-auto sm:px-6 sm:py-6 sm:text-2xl ${className}`}
       style={{ borderRadius: 0 }}
     >
       {children}

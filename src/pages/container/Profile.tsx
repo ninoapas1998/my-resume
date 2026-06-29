@@ -4,7 +4,7 @@ import { FaLinkedin, FaBehance, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "r
 export default function ProfileCard() {
   return (
 <div className="w-full flex">
-      <div className="w-[413px] rounded-2xl bg-white p-8 md:p-8 shadow-md">
+      <div className="w-full rounded-2xl bg-white p-5 sm:p-8 shadow-md">
         
         {/* Avatar */}
         <div className="flex flex-col items-center">
@@ -15,19 +15,19 @@ export default function ProfileCard() {
             className="rounded-full object-cover border-gray-100 border"
             alt="Picture of the author"
           />
-          <h1 className="mt-4 text-2xl font-bold text-gray-800">
+          <h1 className="mt-4 text-center text-2xl font-bold text-gray-800">
             Vincent Niño N. Apas
           </h1>
-          <p className="text-base text-gray-500 font-medium">
+          <p className="text-center text-base text-gray-500 font-medium">
             Front-end Developer/UI/UX Designer
           </p>
         </div>
 
         {/* Contact Info */}
         <div className="mt-6 space-y-2">
-          <div className="flex items-center gap-2">
+          <div className="flex items-start gap-2">
             <FaMapMarkerAlt className="h-5 w-5 flex-shrink-0 text-[#008DDE]" />
-            <span className="text-sm text-gray-800 font-medium">
+            <span className="text-sm text-gray-800 font-medium break-all">
               Lilo-an, Cebu
             </span>
           </div>

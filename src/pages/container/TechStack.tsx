@@ -16,7 +16,7 @@ export default function TechStack() {
 ];
   return (
     <div className="w-full flex">
-      <div className="w-[413px] rounded-2xl bg-white p-8 md:p-8 shadow-md flex flex-col gap-4">
+      <div className="w-full rounded-2xl bg-white p-5 sm:p-8 shadow-md flex flex-col gap-4">
         <h1 className="text-2xl font-bold text-gray-800">
             Tech Stack
         </h1>

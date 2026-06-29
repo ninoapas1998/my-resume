@@ -18,20 +18,20 @@ export default function Hero() {
       className="w-full items-center justify-center"
       style={{ background: 'linear-gradient(180deg, #030712 0%, #111827 100%)' }}
     >
-      <div className="mx-auto max-w-screen-xl">
-        <div className="flex flex-col gap-10 items-center justify-center py-32">
+      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-10 items-center justify-center py-20 sm:py-24 lg:py-32">
           <img
             src={vn}
             width={256}
             height={256}
-            className="rounded-full object-cover"
+            className="h-40 w-40 rounded-full object-cover sm:h-56 sm:w-56 lg:h-64 lg:w-64"
             alt="Picture of the author"
           />
           <div className="flex flex-col gap-6 items-center text-center">
-            <h1 className="text-6xl font-bold text-[#008DDE] code">
+            <h1 className="text-4xl font-bold text-[#008DDE] code sm:text-5xl lg:text-6xl">
               About me
             </h1>
-            <p className="text-2xl text-white text-center font-extralight">
+            <p className="max-w-5xl text-center text-lg text-white font-extralight sm:text-xl lg:text-2xl">
               I'm a UI/UX Designer with 5+ years of experience crafting intuitive, visually engaging digital products for web platforms.
               Strong focus on usability, clarity, and aligning user needs with business goals. Experienced in end-to-end design—from
               research and user flows to wireframes, high-fidelity UI, and interactive prototypes. Adept at usability testing, iterating
@@ -40,7 +40,7 @@ export default function Hero() {
               deliver high-quality work with strong ownership, consistency, and attention to detail.
             </p>
           </div>
-            <div className="flex gap-6">
+            <div className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:gap-6">
               <Link to="/resume">
                 <Button variant="solidToOutline">
                   View Online Resume

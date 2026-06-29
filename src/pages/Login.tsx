@@ -15,8 +15,8 @@ export default function Login() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="w-[414px] bg-white p-8 shadow-lg flex flex-col gap-6">
+    <div className="w-full min-h-screen bg-gray-100 flex items-center justify-center px-4 py-8">
+      <div className="w-full max-w-[414px] bg-white p-5 shadow-lg flex flex-col gap-6 sm:p-8">
         <h1 className="text-2xl font-bold text-gray-800">
           Login for CMS
         </h1>
